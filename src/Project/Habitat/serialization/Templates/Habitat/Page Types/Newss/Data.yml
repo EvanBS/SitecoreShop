@@ -1,0 +1,18 @@
+﻿---
+ID: "1da8fd65-a4fd-4775-a1cf-f8eecb7b057b"
+Parent: "7a104e5a-f260-49da-b950-ea855159669d"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Project/Habitat/Page Types/Newss/Data
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190530T154907Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
