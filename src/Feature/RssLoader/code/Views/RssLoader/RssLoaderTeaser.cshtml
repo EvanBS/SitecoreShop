@@ -1,0 +1,40 @@
+﻿@using Sitecore.Feature.RssLoader
+@using Sitecore.Foundation.Alerts
+@using Sitecore.Foundation.Alerts.Extensions
+@using Sitecore.Foundation.Dictionary.Extensions
+@using Sitecore.Foundation.SitecoreExtensions.Extensions
+@using Sitecore.Foundation.SitecoreExtensions.Repositories
+@using Sitecore.Foundation.Theming.Extensions
+@model Sitecore.Mvc.Presentation.RenderingModel
+@if (!Model?.Item?.DescendsFrom(Templates.RssLoader.ID) ?? true)
+{
+  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.RssLoader.ID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.Item?.ID, Model.Rendering.Item?.ID)
+  return;
+}
+
+<div class="thumbnail @Model.Rendering.GetBackgroundClass() m-b-1">
+  <header class="thumbnail-header">
+    <span class="label">
+      @Html.Sitecore().Field(Templates.RssLoader.Fields.Date.ToString(), new
+                                                                           {
+                                                                             format = "MMMM dd, yyyy"
+                                                                           })
+    </span>
+    <h3>
+      @Html.Sitecore().Field(Templates.RssLoader.Fields.Title, Model.Item)
+    </h3>
+  </header>
+  <div>
+    <a href="@Model.Item.Url()">
+      @Html.Sitecore().ImageField(Templates.RssLoader.Fields.Image, Model.Item, mw: 750, cssClass: "img-responsive")
+    </a>
+  </div>
+  <div class="caption">
+    <p>
+      @Html.Sitecore().Field(Templates.RssLoader.Fields.Summary, Model.Item)
+    </p>
+    <a href="@Html.Sitecore().CurrentRendering.Item.Url()" class="btn btn-default">
+      @Html.Sitecore().Dictionary("/news/news teaser/read more", "Read more")
+    </a>
+  </div>
+</div>

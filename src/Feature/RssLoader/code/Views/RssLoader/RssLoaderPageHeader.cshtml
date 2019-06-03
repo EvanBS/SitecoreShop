@@ -1,0 +1,30 @@
+﻿@using Sitecore.Feature.RssLoader
+@using Sitecore.Foundation.Alerts
+@using Sitecore.Foundation.Alerts.Extensions
+@using Sitecore.Foundation.SitecoreExtensions.Extensions
+@model Sitecore.Mvc.Presentation.RenderingModel
+@if (!Model?.Item?.DescendsFrom(Templates.RssLoader.ID) ?? true)
+{
+  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.RssLoader.ID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.Item?.ID, Model.Rendering.Item?.ID)
+  return;
+}
+
+<div class="container">
+  <div class="label label-info">
+    <time>
+      @Html.Sitecore().Field(Templates.RssLoader.Fields.Date.ToString(), new
+                                                                           {
+                                                                             format = "MMMM dd, yyyy"
+                                                                           })</time>
+  </div>
+  <h1>
+    @Html.Sitecore().Field(Templates.RssLoader.Fields.Title, Model.Item)
+    @if (Model.Item.FieldHasValue(Templates.RssLoader.Fields.Summary) || Sitecore.Context.PageMode.IsExperienceEditor)
+    {
+      <br/>
+      <small>
+        @Html.Sitecore().Field(Templates.RssLoader.Fields.Summary, Model.Item)
+      </small>
+    }
+  </h1>
+</div>
