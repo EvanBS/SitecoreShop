@@ -1,0 +1,14 @@
+﻿---
+ID: "e715382a-e49c-4cfa-aa02-67dea757513f"
+Parent: "00708e15-cfda-44c4-abc5-3938eaea30d2"
+Template: "aabdedd1-75c3-42e8-b8a3-5dacd2e224ff"
+Path: /sitecore/content/Habitat/Home/Modules/Feature/RssFeed/New Rss News List
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190603T142017Z

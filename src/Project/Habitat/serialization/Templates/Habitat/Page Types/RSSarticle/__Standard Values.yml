@@ -1,0 +1,28 @@
+﻿---
+ID: "927efc6e-e7ac-43c4-b7ba-bcec77b40095"
+Parent: "a0d05971-89ec-4dc2-acff-ba0aa3465c84"
+Template: "a0d05971-89ec-4dc2-acff-ba0aa3465c84"
+Path: /sitecore/templates/Project/Habitat/Page Types/RSSarticle/__Standard Values
+DB: master
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{ED043C36-CD48-4EDF-A288-EC404EE1CD42}" />
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190604T114503Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

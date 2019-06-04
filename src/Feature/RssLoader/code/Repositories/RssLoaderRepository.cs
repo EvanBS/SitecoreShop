@@ -10,11 +10,11 @@
     using Sitecore.Foundation.SitecoreExtensions.Extensions;
 
     [Service(typeof(IRssLoaderRepository))]
-    public class NewsRepository : IRssLoaderRepository
+    public class RssLoaderRepository : IRssLoaderRepository
     {
         private readonly ISearchServiceRepository searchServiceRepository;
 
-        public NewsRepository(ISearchServiceRepository searchServiceRepository)
+        public RssLoaderRepository(ISearchServiceRepository searchServiceRepository)
         {
             this.searchServiceRepository = searchServiceRepository;
         }
@@ -25,10 +25,10 @@
             {
                 throw new ArgumentNullException(nameof(contextItem));
             }
-            if (!contextItem.DescendsFrom(Templates.RssLoaderFolder.ID))
-            {
-                throw new ArgumentException("Item must derive from NewsFolder", nameof(contextItem));
-            }
+            //if (!contextItem.DescendsFrom(Templates.RssLoaderFolder.ID))
+            //{
+            //    throw new ArgumentException("Item must derive from NewsFolder", nameof(contextItem));
+            //}
 
             var searchService = this.searchServiceRepository.Get(new SearchSettingsBase { Templates = new[] { Templates.RssLoader.ID } });
             searchService.Settings.Root = contextItem;

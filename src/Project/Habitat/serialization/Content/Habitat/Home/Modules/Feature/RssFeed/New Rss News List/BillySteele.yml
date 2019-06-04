@@ -1,0 +1,33 @@
+﻿---
+ID: "e884a1ba-b25f-4e36-bd20-6701fbd35989"
+Parent: "e715382a-e49c-4cfa-aa02-67dea757513f"
+Template: "a0d05971-89ec-4dc2-acff-ba0aa3465c84"
+Path: /sitecore/content/Habitat/Home/Modules/Feature/RssFeed/New Rss News List/BillySteele
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190604T105924Z
+    - ID: "3f59a8a5-9be3-4043-ab2b-95bda686ed52"
+      Hint: description
+      Value: It wouldn't be WWDC without new features for Apple Health. We've known the company had big plans for the app this year based on Tim Cook's comments in January, but now we're getting some details on the improvements that will arrive with iOS 13 and watchOS 6. вЂ¦
+    - ID: "59fb72ae-9478-4c1f-8051-a7812e31d679"
+      Hint: Author
+      Value: BillySteele
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "ad95b4f3-3ca1-4654-ab25-d7652dd66f85"
+      Hint: NewsDate
+      Value: 20190603T173400Z
+    - ID: "d542b430-8a9e-4d13-a070-ff8f904924be"
+      Hint: urlToImage
+      Value: "https://o.aolcdn.com/images/dims?thumbnail=1200%2C630&quality=80&image_uri=https%3A%2F%2Fo.aolcdn.com%2Fimages%2Fdims%3Fcrop%3D1599%252C1066%252C0%252C0%26quality%3D85%26format%3Djpg%26resize%3D1600%252C1067%26image_uri%3Dhttps%253A%252F%252Fs.yimg.com%252Fos%252Fcreatr-uploaded-images%252F2019-06%252Fae92a9b0-8625-11e9-b7f1-1afe0ff0b397%26client%3Da1acac3e1b3290917d92%26signature%3D21901c1fa6ebd30a4c8f965b718da5f176999510&client=amp-blogside-v2&signature=f60817413922f7f48a14e6fd06404922747e6efe"
+    - ID: "de547539-ea91-43e3-a592-72459ca1cc1b"
+      Hint: NewsSummary
+      Value: Apple Watch can help save your hearing and track your menstrual cycle

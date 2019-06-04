@@ -6,7 +6,10 @@
   {
     public struct RssLoader
     {
+
       public static readonly ID ID = new ID("{C31ED8DE-49BC-4E1B-BF43-9A5087174E32}");
+
+      public static readonly ID NewsListRootID = new ID("{E715382A-E49C-4CFA-AA02-67DEA757513F}");
 
       public struct Fields
       {

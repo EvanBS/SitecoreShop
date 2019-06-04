@@ -36,6 +36,26 @@ SharedFields:
           value="3" />
       </profile>
     </tracking>
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{CA76A6D1-7DC4-45A6-A904-5D87D6299CE3}"
+          p:after="r[@uid='{20AB9BAA-C112-4567-A701-564423E650D2}']"
+          s:id="{10021A20-1BBD-49B9-A51A-36948DA392F9}"
+          s:ph="all-rss-news-list" />
+        <r
+          uid="{F5B1C751-EF19-43E6-90E6-F55290ABE102}"
+          p:after="*[1=2]"
+          s:id="{5CCE10B2-3E61-4FE5-AD1C-36C17B042163}"
+          s:ph="news-article" />
+      </d>
+    </r>
 Languages:
 - Language: da
   Versions:
@@ -221,6 +241,12 @@ Languages:
                 </ruleset>
               </rls>
             </r>
+            <r
+              uid="{896CE287-FDEC-4A83-9463-310EB4A50B03}"
+              p:after="r[@uid='{1DF746C3-2D29-43E6-9DE2-05622DED6F97}']"
+              s:ds="{00708E15-CFDA-44C4-ABC5-3938EAEA30D2}"
+              s:id="{10021A20-1BBD-49B9-A51A-36948DA392F9}"
+              s:ph="page-layout" />
             <r
               uid="{F4FE27AF-B867-4E72-8808-843D5781A355}"
               p:after="r[@uid='{A3CA17FF-693C-46F1-87AA-B8C1833F1890}']"
