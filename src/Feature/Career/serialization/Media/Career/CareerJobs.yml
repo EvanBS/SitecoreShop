@@ -1,0 +1,14 @@
+﻿---
+ID: "979e3792-8179-4e78-a69e-d16abbb03b2d"
+Parent: "c7d0d552-698d-4f24-bc99-9998f9cf711e"
+Template: "f1828a2c-7e5d-4bbd-98ca-320474871548"
+Path: /sitecore/media library/Feature/Career/CareerJobs
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190531T125410Z

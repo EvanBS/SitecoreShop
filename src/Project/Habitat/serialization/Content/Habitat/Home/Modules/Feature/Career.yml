@@ -1,0 +1,110 @@
+﻿---
+ID: "e827d97d-380d-4eae-bd52-2721f364d774"
+Parent: "f7434df7-e32e-4f8c-a50e-27c476f4dc32"
+Template: "078794da-5dc3-43e1-9ee7-1a926c4de40e"
+Path: /sitecore/content/Habitat/Home/Modules/Feature/Career
+DB: master
+SharedFields:
+- ID: "b0a67b2a-8b07-4e0b-8809-69f751709806"
+  Hint: __Tracking
+  Type: Tracking
+  Value: |
+    <tracking>
+      <event
+        id="{D8EFAB3E-B417-4260-9E3C-21A60013B126}"
+        name="User Searches Job" />
+      <profile
+        id="0faf1df6-c36e-434b-bffc-13584e07b8e3"
+        name="Articles"
+        presets="carsfan|100||">
+        <key
+          name="Cars"
+          value="3" />
+        <key
+          name="Gadgets"
+          value="0" />
+        <key
+          name="Gardening"
+          value="0" />
+      </profile>
+    </tracking>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{6B6628A9-A96E-4A41-96FB-6B3C6AFE2782}"
+              p:before="*"
+              s:ds="{E827D97D-380D-4EAE-BD52-2721F364D774}"
+              s:id="{70400250-E4FE-4781-99C4-A104705E191F}"
+              s:ph="/page-layout/section-narrow">
+              <rls>
+                <ruleset>
+                  <rule
+                    uid="{856153DA-6262-41AC-AC67-3FB0432EB239}"
+                    s:name="show jobs">
+                    <actions>
+                      <action
+                        uid="AD2FBF7A081744B1949B940D84AB460D"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="{E827D97D-380D-4EAE-BD52-2721F364D774}" />
+                    </actions>
+                    <conditions>
+                      <and
+                        uid="1A58119774984EDEB69E8ECDF5CA8443">
+                        <condition
+                          uid="704D9AA3E9C343A087C17747131CD4AF"
+                          s:id="{4D290FF3-1587-4FEE-AB37-88768766A9D9}"
+                          s:GoalId="{D8EFAB3E-B417-4260-9E3C-21A60013B126}" />
+                        <condition
+                          uid="6F04595E52D04656AC92A294F3006A83"
+                          s:id="{03C88BC4-8583-4AB9-A7CB-428E13E7C325}"
+                          s:operatorid="{814EF7D0-1639-44FD-AEEF-735B5AC14425}"
+                          s:value="15" />
+                      </and>
+                    </conditions>
+                  </rule>
+                  <rule
+                    uid="{00000000-0000-0000-0000-000000000000}"
+                    s:name="Default">
+                    <conditions>
+                      <condition
+                        uid="91058750D15A4E11A673A277B8B5EF3D"
+                        s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="91188AD945BB4F90AF4CE1920BB2964F"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="{E827D97D-380D-4EAE-BD52-2721F364D774}" />
+                      <action
+                        uid="EBDBFE1A78C74073B77895FA8BD25A8E"
+                        s:id="{25F351A1-712D-45F8-857D-8AD95BB2ACE9}" />
+                    </actions>
+                  </rule>
+                </ruleset>
+              </rls>
+            </r>
+          </d>
+        </r>
+    - ID: "1b483e91-d8c4-4d19-ba03-462074b55936"
+      Hint: NavigationTitle
+      Value: Career
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190605T101719Z
+    - ID: "c30a013f-3cc8-4961-9837-1c483277084a"
+      Hint: Title
+      Value: Career
+    - ID: "ca0479ce-0bfe-4522-83de-ba688b380a78"
+      Hint: BrowserTitle
+      Value: Career

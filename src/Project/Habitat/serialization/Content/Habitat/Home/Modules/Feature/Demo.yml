@@ -24,6 +24,20 @@ SharedFields:
           name="Project"
           value="0" />
       </profile>
+      <profile
+        id="0faf1df6-c36e-434b-bffc-13584e07b8e3"
+        name="Articles"
+        presets="gadgetfan|100||">
+        <key
+          name="Cars"
+          value="0" />
+        <key
+          name="Gadgets"
+          value="5" />
+        <key
+          name="Gardening"
+          value="0" />
+      </profile>
     </tracking>
 Languages:
 - Language: en

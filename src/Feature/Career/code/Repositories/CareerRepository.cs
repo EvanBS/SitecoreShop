@@ -1,0 +1,47 @@
+﻿namespace Sitecore.Feature.Career.Repositories
+{
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using Sitecore.Data.Items;
+    using Sitecore.Feature.Career;
+    using Sitecore.Foundation.DependencyInjection;
+    using Sitecore.Foundation.Indexing.Models;
+    using Sitecore.Foundation.Indexing.Repositories;
+    using Sitecore.Foundation.SitecoreExtensions.Extensions;
+
+    [Service(typeof(ICareerRepository))]
+    public class CareerRepository : ICareerRepository
+    {
+        private readonly ISearchServiceRepository searchServiceRepository;
+
+        public CareerRepository(ISearchServiceRepository searchServiceRepository)
+        {
+            this.searchServiceRepository = searchServiceRepository;
+        }
+
+        public IEnumerable<Item> Get(Item contextItem)
+        {
+            if (contextItem == null)
+            {
+                throw new ArgumentNullException(nameof(contextItem));
+            }
+            //if (!contextItem.DescendsFrom(Templates.RssLoaderFolder.ID))
+            //{
+            //    throw new ArgumentException("Item must derive from NewsFolder", nameof(contextItem));
+            //}
+
+            var searchService = this.searchServiceRepository.Get(new SearchSettingsBase { Templates = new[] { Templates.Career.ID } });
+            searchService.Settings.Root = contextItem;
+            //TODO: Refactor for scalability
+            var results = searchService.FindAll();
+            return results.Results.Select(x => x.Item).Where(x => x != null).OrderByDescending(i => i[Templates.Career.Fields.Date]);
+        }
+
+        public IEnumerable<Item> GetLatest(Item contextItem, int count)
+        {
+            //TODO: Refactor for scalability
+            return this.Get(contextItem).Take(count);
+        }
+    }
+}

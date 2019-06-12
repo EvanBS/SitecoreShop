@@ -1,0 +1,40 @@
+﻿---
+ID: "a2959e51-4333-4d5c-927c-8258134d592a"
+Parent: "e827d97d-380d-4eae-bd52-2721f364d774"
+Template: "d2dd47e6-ce51-4454-a309-ad9cb52c3eaa"
+Path: /sitecore/content/Habitat/Home/Modules/Feature/Career/SwiftDev
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{63FDDDFB-33DD-476D-917A-EE92BFA89CE6}"
+              s:id="{DD092AC5-8E74-4A43-878A-021195B9DE09}"
+              s:ph="page-layout" />
+          </d>
+        </r>
+    - ID: "05e68658-19e4-43b3-93cc-67fd152ce040"
+      Hint: PubDate
+      Value: 20190603T210000Z
+    - ID: "23cd0a54-d2fe-4549-9bf1-856d44e517d0"
+      Hint: JobSummary
+      Value: Make Swift apps
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190605T113655Z
+    - ID: "bafa2ada-3c72-4e47-ac5e-2a43e9efc124"
+      Hint: JobTitle
+      Value: Swift dev
+    - ID: "dc9c59ef-c817-4548-8425-1361343f22a2"
+      Hint: jobBody
+      Value: Swift dev

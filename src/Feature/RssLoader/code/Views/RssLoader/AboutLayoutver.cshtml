@@ -1,0 +1,52 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@model RenderingModel
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        .bg-colo {
+            color: @Html.Raw(Model.Item.Fields["ArticleColor"])
+        }
+
+        .img-fluid {
+            width: 200px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <h4>ArticleText</h4>
+
+    <div class="bg-colo">
+        @Html.Sitecore().Field("ArticleText")
+    </div>
+
+    <h4>ArticleColor: @Html.Sitecore().Field("ArticleColor")</h4>
+
+
+    <h1>HeaderBackground</h1>
+    <div class="container">
+        <div class="col-sm-3">
+            @Html.Sitecore().Field("HeaderBackgroundShared", Model.Item, new { @class = "img-fluid" })
+        </div>
+    </div>
+
+    <h1>Versioned jpeg</h1>
+    <div class="container">
+        <div class="col-sm-3">
+            @Html.Sitecore().Field("VersImage", Model.Item, new { @class = "img-fluid" })
+        </div>
+    </div>
+
+    <h1>Unversioned jpeg</h1>
+    <div class="container">
+        <div class="col-sm-3">
+            @Html.Sitecore().Field("UnverImage", Model.Item, new { @class = "img-fluid" })
+        </div>
+    </div>
+</body>
+</html>

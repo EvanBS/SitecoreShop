@@ -272,6 +272,8 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="App_Config\Include\Feature\Feature.Demo.config" />
+    <Content Include="App_Config\Include\Feature\ModelBindSend.config" />
+    <Content Include="App_Config\Include\Feature\AddSiteCon.config" />
     <None Include="Properties\PublishProfiles\Standalone.pubxml" />
     <Content Include="Views\Demo\_KeyBehaviourCacheList.cshtml" />
     <Content Include="Scripts\Demo\VisitDetails.js" />
@@ -282,6 +284,8 @@
     <Content Include="Views\Demo\ExperienceData.cshtml" />
     <Content Include="Views\Demo\_OnsiteBehaviorProfiling.cshtml" />
     <Content Include="Views\Demo\_ExperienceDataContent.cshtml" />
+    <Content Include="Views\Demo\Statistic.cshtml" />
+    <Content Include="Views\Demo\StatisticModel.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -299,12 +303,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\Campaign.cs" />
+    <Compile Include="Models\CustomModelBinders\XMLToObjectModelBinder.cs" />
     <Compile Include="Models\DemoContent.cs" />
     <Compile Include="Controllers\DemoController.cs" />
     <Compile Include="Models\Device.cs" />
     <Compile Include="Models\EngagementPlanState.cs" />
     <Compile Include="Models\ExperienceData.cs" />
+    <Compile Include="Models\IDBinder.cs" />
+    <Compile Include="Models\Initializer.cs" />
+    <Compile Include="Models\ModelBinderSatistic.cs" />
+    <Compile Include="Models\StatisticInfoModel.cs" />
+    <Compile Include="Models\StatisticInfo.cs" />
     <Compile Include="Pipelines\FakeTrackerData.cs" />
+    <Compile Include="Pipelines\SendBindData.cs" />
     <Compile Include="Repositories\CampaignRepository.cs" />
     <Compile Include="Repositories\DeviceRepository.cs" />
     <Compile Include="Repositories\EngagementPlanStateRepository.cs" />

@@ -2,6 +2,7 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Collections.Specialized;
     using System.Linq;
     using System.Net;
     using System.Text.RegularExpressions;
@@ -14,6 +15,8 @@
     using Sitecore.Foundation.SitecoreExtensions.Extensions;
     using Sitecore.Mvc.Presentation;
     using Sitecore.SecurityModel;
+    using Sitecore.Analytics.Tracking;
+    using Sitecore.Analytics;
 
     public class RssLoaderController : Controller
     {
@@ -26,6 +29,32 @@
 
         public ActionResult NewsList()
         {
+
+            string profileName = "Articles";
+
+            Profile profile;
+            if (Tracker.Current.Interaction.Profiles.ContainsProfile(profileName))
+            {
+                profile = Tracker.Current.Interaction.Profiles[profileName];
+            }
+            else
+            {
+                var profiles = new List<Sitecore.Analytics.Model.ProfileData>
+                {
+                    new Sitecore.Analytics.Model.ProfileData(profileName )
+                };
+
+                Tracker.Current.Interaction.Profiles.Initialize(profiles);
+                profile = Tracker.Current.Interaction.Profiles[profileName];
+            }
+
+            string result = profile.ToString();
+
+
+            return View("NewsList", (object)result);
+
+            return Content(profile.ToString());
+
 
             var url = "https://newsapi.org/v2/everything?q=apple&from=2019-06-03&to=2019-06-03&sortBy=popularity&apiKey=150b111921fa4576b423a65f126bc7b7";
 
@@ -89,10 +118,28 @@
 
         public ActionResult LatestNews()
         {
-            //TODO: change to parameter template
-            var count = RenderingContext.Current.Rendering.GetIntegerParameter("count", 5);
-            var items = this.Repository.GetLatest(RenderingContext.Current.Rendering.Item, count);
-            return this.View("LatestNews", items);
+            return Content("sfdr");
+            string profileName = "Articles";
+
+            Profile profile;
+            if (Tracker.Current.Interaction.Profiles.ContainsProfile(profileName))
+            {
+                profile = Tracker.Current.Interaction.Profiles[profileName];
+            }
+            else
+            {
+                var profiles = new List<Sitecore.Analytics.Model.ProfileData>
+                {
+                    new Sitecore.Analytics.Model.ProfileData(profileName )
+                };
+
+                Tracker.Current.Interaction.Profiles.Initialize(profiles);
+                profile = Tracker.Current.Interaction.Profiles[profileName];
+            }
+
+
+
+            return Content(profile.ToString());
         }
     }
 }

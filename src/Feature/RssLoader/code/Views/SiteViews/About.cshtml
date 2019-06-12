@@ -1,0 +1,14 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@model RenderingModel
+
+
+
+
+@Html.Sitecore().Field("Workers")
+<h4>ArticleText: @Html.Sitecore().Field("ArticleText")</h4>
+<h4>ArticleColor: @Html.Sitecore().Field("ArticleColor")</h4>
+
+<div class="col-sm-6">
+    @Html.Sitecore().Field("HeaderBackground", Model.Item, new { @class = "img-fluid" })
+</div>

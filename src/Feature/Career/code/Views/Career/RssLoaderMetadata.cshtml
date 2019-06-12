@@ -1,0 +1,15 @@
+﻿@using Sitecore.Feature.RssLoader
+@using Sitecore.Foundation.Alerts
+@using Sitecore.Foundation.Alerts.Extensions
+@using Sitecore.Foundation.SitecoreExtensions.Extensions
+@model Sitecore.Mvc.Presentation.RenderingModel
+
+@if (!Model?.Item?.DescendsFrom(Templates.RssLoader.ID) ?? true)
+{
+  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.RssLoader.ID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.Item?.ID, Model.Rendering.Item?.ID)
+  return;
+}
+
+<div class="thumbnail m-b-1">
+  @Html.Sitecore().ImageField(Templates.RssLoader.Fields.Image, Model.Item, mw: 500)
+</div>

@@ -4,6 +4,26 @@ Parent: "e715382a-e49c-4cfa-aa02-67dea757513f"
 Template: "a0d05971-89ec-4dc2-acff-ba0aa3465c84"
 Path: /sitecore/content/Habitat/Home/Modules/Feature/RssFeed/New Rss News List/AJDellinger
 DB: master
+SharedFields:
+- ID: "b0a67b2a-8b07-4e0b-8809-69f751709806"
+  Hint: __Tracking
+  Type: Tracking
+  Value: |
+    <tracking>
+      <profile
+        id="0faf1df6-c36e-434b-bffc-13584e07b8e3"
+        name="Articles">
+        <key
+          name="Cars"
+          value="0" />
+        <key
+          name="Gadgets"
+          value="0" />
+        <key
+          name="Gardening"
+          value="0" />
+      </profile>
+    </tracking>
 Languages:
 - Language: en
   Versions:

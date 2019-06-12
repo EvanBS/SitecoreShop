@@ -1,0 +1,26 @@
+﻿---
+ID: "d88b2bca-342a-472f-830e-afc07cf84afb"
+Parent: "e827d97d-380d-4eae-bd52-2721f364d774"
+Template: "d2dd47e6-ce51-4454-a309-ad9cb52c3eaa"
+Path: /sitecore/content/Habitat/Home/Modules/Feature/Career/Ccharp
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "05e68658-19e4-43b3-93cc-67fd152ce040"
+      Hint: PubDate
+      Value: 20190604T210000Z
+    - ID: "23cd0a54-d2fe-4549-9bf1-856d44e517d0"
+      Hint: JobSummary
+      Value: Make C# apps
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190605T112517Z
+    - ID: "bafa2ada-3c72-4e47-ac5e-2a43e9efc124"
+      Hint: JobTitle
+      Value: C# dev
+    - ID: "dc9c59ef-c817-4548-8425-1361343f22a2"
+      Hint: jobBody
+      Value: C# dev

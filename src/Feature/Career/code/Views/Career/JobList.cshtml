@@ -1,0 +1,48 @@
+﻿@using Sitecore.Feature.Career
+@using Sitecore.Foundation.SitecoreExtensions.Extensions
+@model IEnumerable<Sitecore.Data.Items.Item>
+
+<h1>Join our team</h1>
+
+@if (Model == null)
+{
+<h1>No Jobs</h1>
+}
+else
+{
+    <ul class="media-list media-list-divided">
+
+
+        @foreach (var item in Model)
+        {
+
+            <li class="media">
+
+
+
+
+                <div class="media-body">
+                    <div class="label label-info">
+                        @Html.Sitecore().Field(Templates.Career.Fields.Date.ToString(), item, new
+                                                                                                   {
+                                                                                                     format = "MMMM dd, yyyy"
+                                                                                                   })
+                    </div>
+                    <h3 class="media-title">
+                        <a href="@item.Url()">
+                            @Html.Sitecore().Field(Templates.Career.Fields.JobTitle, item)
+
+                        </a>
+                    </h3>
+
+                    <p>
+                        @Html.Sitecore().Field(Templates.Career.Fields.Summary, item)
+                    </p>
+
+                </div>
+            </li>
+        
+        }
+
+    </ul>
+}

@@ -1,0 +1,20 @@
+﻿@using Sitecore.Mvc;
+@using Sitecore.Data;
+@using Sitecore.Data.Items;
+@using Sitecore.ContentSearch;
+@using Sitecore.Mvc.Presentation;
+@model Sitecore.Mvc.Presentation.RenderingModel
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    test auto DS
+
+    @Html.Sitecore().Placeholder("test-ph")
+
+
+    @Html.Sitecore().Field("title")
+</body>
+</html>

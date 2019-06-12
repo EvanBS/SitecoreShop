@@ -1,0 +1,17 @@
+﻿
+@using Sitecore.Feature.Career
+@using Sitecore.Foundation.Alerts
+@using Sitecore.Foundation.Alerts.Extensions
+@using Sitecore.Foundation.SitecoreExtensions.Extensions
+@model Sitecore.Mvc.Presentation.RenderingModel
+@if (!Model?.Item?.DescendsFrom(Templates.Career.ID) ?? true)
+{
+  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.Career.ID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.Item?.ID, Model.Rendering.Item?.ID)
+  return;
+}
+
+<h3>detailed</h3>
+
+<div>
+  @Html.Sitecore().Field(Templates.Career.Fields.Summary, Model.Item)
+</div>
