@@ -17,15 +17,80 @@
     using Sitecore.SecurityModel;
     using Sitecore.Analytics.Tracking;
     using Sitecore.Analytics;
+    using System.Web.Http;
 
     public class RssLoaderController : Controller
     {
-        public RssLoaderController(IRssLoaderRepository newsRepository)
+        public RssLoaderController(IRssLoaderRepository newsRepository, IWeatherRepo weatherRepo)
         {
             this.Repository = newsRepository;
+            this.weatherRepo = weatherRepo;
         }
 
         private IRssLoaderRepository Repository { get; }
+        private IWeatherRepo weatherRepo { get; }
+
+        public ActionResult ByDataCustom()
+        {
+            return View("ByDataCustom", weatherRepo);
+        }
+
+
+        public string MyTest()
+        {
+            var dataSourceId = RenderingContext.CurrentOrNull.Rendering.DataSource;
+            var dataSource = Sitecore.Context.Database.GetItem(dataSourceId);
+
+            var n = dataSource.Fields["input"].Value;
+
+            long nthPrime = FindPrimeNumber(Convert.ToInt32(n));
+
+
+            return "calculated ^ " + nthPrime;
+        }
+
+        [System.Web.Mvc.HttpPost]
+        public string HardAlg([FromBody] string inp)
+        {
+            long nthPrime = FindPrimeNumber(Convert.ToInt32(inp));
+
+            return "zdarova : " + nthPrime.ToString();
+
+            //nthPrime = 322;
+            return nthPrime.ToString();
+        }
+
+
+        public ActionResult Cacheable()
+        {
+            return View("~/Views/CacheRenderings/Cacheable.cshtml");
+        }
+
+        public long FindPrimeNumber(int n)
+        {
+            int count = 0;
+            long a = 2;
+            while (count < n)
+            {
+                long b = 2;
+                int prime = 1;// to check if found a prime
+                while (b * b <= a)
+                {
+                    if (a % b == 0)
+                    {
+                        prime = 0;
+                        break;
+                    }
+                    b++;
+                }
+                if (prime > 0)
+                {
+                    count++;
+                }
+                a++;
+            }
+            return (--a);
+        }
 
         public ActionResult NewsList()
         {

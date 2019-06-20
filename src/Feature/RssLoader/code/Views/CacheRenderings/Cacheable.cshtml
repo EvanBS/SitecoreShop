@@ -1,0 +1,60 @@
+﻿<h1>Cacheable</h1>
+
+
+<!--
+<input type="button" name="btnAwesome" id="btnAwesome" value="click" />
+num
+<input type="text" name="inp1" id="inp1" value="" size="40" placeholder="100" />
+
+result:
+<div id="dataDiv">
+
+</div>
+
+-->
+
+<p>
+    input val ds
+    @Html.Sitecore().Field("input")
+</p>
+
+call method
+@Html.Action("MyTest");
+
+
+<!--
+@using (Html.BeginForm("HardAlg", "RssLoader", FormMethod.Post))
+{
+    <input type="text" value="@Html.Sitecore().Field("input")" name="inp" />
+    <p><input type="submit" value="Отправить" /></p>
+}
+
+-->
+
+
+
+<!--
+<script>
+    $(document).ready(function() {
+        $("input[id$='btnAwesome']").click(function() {
+            console.log('opa');
+
+            $.ajax({
+                    type: "POST",
+                    url: '@Url.Action("HardAlg", "RssLoader")',
+                    contentType: "application/json; charset=utf-8",
+                    data: '{"inp1":"' + @Html.Sitecore().Field("input").ToString() + '"}',
+                    dataType: "html",
+                    success: function (result) {
+                        $("#dataDiv").html(result);
+                    },
+                    error: function () {
+                        $("#dataDiv").html("Result: npone");
+                    }
+            });
+
+
+        });
+    });
+</script>
+    -->

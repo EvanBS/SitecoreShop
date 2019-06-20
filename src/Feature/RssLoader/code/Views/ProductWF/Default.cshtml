@@ -1,0 +1,38 @@
+﻿@using Sitecore.Mvc;
+@using Sitecore.Data;
+@using Sitecore.Data.Items;
+@using Sitecore.ContentSearch;
+@using Sitecore.Mvc.Presentation;
+@model Sitecore.Mvc.Presentation.RenderingModel
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Home</title>
+</head>
+<body>
+    <h1>Product</h1>
+    <p>
+        Title
+        @Html.Sitecore().Field("Title")
+    </p>
+
+    <p>
+        Counts
+        @Html.Sitecore().Field("Counts")
+    </p>
+
+    <p>
+        AllPrice
+        @Html.Sitecore().Field("AllPrice")
+    </p>
+
+
+
+    ProductImage
+    <div class="col-sm-6">
+        @Html.Sitecore().Field("ProductImage", Model.Item, new { @class = "img-fluid" })
+    </div>
+
+
+</body>
+</html>

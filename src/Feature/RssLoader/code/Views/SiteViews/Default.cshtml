@@ -12,6 +12,10 @@
 <body>
     <h1>Site</h1>
 
+    
+    @Html.Sitecore().Placeholder("page-layout-ph")
+
+
     @Html.Sitecore().Placeholder("about-ph")
     @Html.Sitecore().Placeholder("what-we-do-ph")
 
@@ -19,7 +23,7 @@
 
     <script>
 @{
-        
+
 
             foreach (Item item in Model.Item.Parent.Axes.GetDescendants().Where(i => i.TemplateID.ToString() == "{E05DDC84-1833-4236-8389-B16F42557EE9}"))
             {

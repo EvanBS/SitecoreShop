@@ -1,0 +1,33 @@
+﻿---
+ID: "c1813b6c-12da-4453-b9e3-b69f22771ba4"
+Parent: "7649ae16-b01d-4039-a871-ba3a207946d3"
+Template: "2a3e91a0-7987-44b5-ab34-35c2d9de83b9"
+Path: /sitecore/layout/Renderings/Feature/RssLoader/CachingFold/ByDataCustomC
+DB: master
+SharedFields:
+- ID: "13d21231-0f24-4b21-be91-722df5511ea0"
+  Hint: VaryByWebsite
+  Type: Checkbox
+  Value: 1
+- ID: "3d08db46-2267-41b0-bc52-be69fd618633"
+  Hint: Cacheable
+  Type: Checkbox
+  Value: 1
+- ID: "dec8d2d5-e3cf-48b6-a653-8e69e2716641"
+  Hint: __Security
+  Value: |
+    au|sitecore\admin|p*|+item:read|+item:write|
+- ID: "ded9e431-3604-4921-a4b3-a6ec7636a5b6"
+  Hint: Controller Action
+  Value: ByDataCustom
+- ID: "e64ad073-dfcc-4d20-8c0b-fe5aa6226cd7"
+  Hint: Controller
+  Value: Sitecore.Feature.RssLoader.Controllers.RssLoaderController, Sitecore.Feature.RssLoader
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190619T130234Z

@@ -37,7 +37,7 @@ SharedFields:
 - ID: "dec8d2d5-e3cf-48b6-a653-8e69e2716641"
   Hint: __Security
   Value: |
-    ar|extranet\Project Habitat Content Author|pe|+item:write|+item:read|!*|pd|+item:write|+item:read|!*|
+    ar|extranet\Project Habitat Content Author|pe|+item:write|+item:read|!*|pd|+item:write|+item:read|!*|ar|site1\ReceivingProdRole|pe|-item:read|pd|-item:read|ar|site3\Site3EditorRole|pe|-item:read|pd|-item:read|ar|sitecore\BaseSiteManagerRole|pe|-item:read|pd|-item:read|ar|site1\ApprovalUserRole|pe|-item:read|pd|-item:read|ar|site1\FinalCheckProdRole|pe|-item:read|pd|-item:read|au|site1\AuthorUser|pe|-item:write|-item:read|-item:rename|pd|-item:write|-item:read|-item:rename|
 - ID: "ed71d374-8c33-4561-991d-77482ae01330"
   Hint: Accounts Details Page
   Value: /sitecore/content/Habitat/Home/Edit Profile
