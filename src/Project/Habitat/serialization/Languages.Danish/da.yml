@@ -29,6 +29,10 @@ SharedFields:
 - ID: "c437e416-8948-427d-a982-8ed37ae3f553"
   Hint: Iso
   Value: da
+- ID: "dec8d2d5-e3cf-48b6-a653-8e69e2716641"
+  Hint: __Security
+  Value: |
+    au|site2\EditorUserSite2|pe|-item:write|-item:read|-item:admin|-item:rename|pd|-item:write|-item:read|-item:admin|-item:rename|au|site1\AuthorUser|pe|+item:create|+item:read|+item:rename|+item:write|+language:write|+language:read|pd|+item:create|+item:read|+item:rename|+item:write|+language:write|+language:read|ar|sitecore\LangRestrictRole|pe|-item:rename|-item:delete|-item:create|-item:admin|-item:write|-item:read|pd|-item:rename|-item:delete|-item:create|-item:admin|-item:write|-item:read|
 Languages:
 - Language: en
   Versions:

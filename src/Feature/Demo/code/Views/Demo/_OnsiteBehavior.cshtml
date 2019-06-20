@@ -56,6 +56,10 @@
                     <span class="fa fa-trophy"></span>
                 </div>
                 <div class="media-body ">
+
+                    @Html.Sitecore().Placeholder("stat")
+
+
                     <h4 class="media-title">
                         @Html.Sitecore().DictionaryField("//Demo/Onsite Behavior/Goals Triggered", "Triggered goals")
                         @if (Model.Goals.Any())

@@ -1,0 +1,26 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@model RenderingModel
+
+
+
+
+@Html.Sitecore().Field("Workers")
+<h4>ArticleText: @Html.Sitecore().Field("ArticleText")</h4>
+<h4>ArticleColor: @Html.Sitecore().Field("ArticleColor")</h4>
+
+HeaderBackgroundShared
+<div class="col-sm-6">
+    @Html.Sitecore().Field("HeaderBackgroundShared", Model.Item, new { @class = "img-fluid" })
+</div>
+
+VersImage
+<div class="col-sm-6">
+    @Html.Sitecore().Field("VersImage", Model.Item, new { @class = "img-fluid" })
+</div>
+
+
+UnverImage
+<div class="col-sm-6">
+    @Html.Sitecore().Field("UnverImage", Model.Item, new { @class = "img-fluid" })
+</div>

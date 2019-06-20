@@ -131,6 +131,10 @@ SharedFields:
           id="{CED18F24-62C2-445E-B0D9-045E3325297B}"
           ph="page-sidebar"
           uid="{20AB9BAA-C112-4567-A701-564423E650D2}" />
+        <r
+          id="{A0E339D1-7B25-4787-AB28-6A47FE0545A0}"
+          ph="stat"
+          uid="{C1D6A8DC-5771-42BF-A44B-D31B04FC326A}" />
       </d>
     </r>
 Languages:

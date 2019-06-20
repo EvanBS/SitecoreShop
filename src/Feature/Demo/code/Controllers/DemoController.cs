@@ -17,6 +17,9 @@ namespace Sitecore.Feature.Demo.Controllers
     using Sitecore.Mvc.Controllers;
     using Sitecore.Mvc.Presentation;
     using Sitecore.Sites;
+    using System.Collections.Generic;
+    using Sitecore.Data;
+    using System.Xml.Serialization;
 
     [SkipAnalyticsTracking]
     public class DemoController : SitecoreController
@@ -70,5 +73,18 @@ namespace Sitecore.Feature.Demo.Controllers
             this.Session.Abandon();
             return new HttpStatusCodeResult(HttpStatusCode.OK);
         }
+
+        public ActionResult StatisticShow([ModelBinder(typeof(ModelBinderSatistic))] StatisticInfo statisticInfo)
+        {
+            return View("Statistic", statisticInfo);
+        }
+        
+
+        public ActionResult StatisticBindingProvider(TestInfo statisticInfoParam)
+        {
+
+            return Content("opa");
+        }
+
     }
 }

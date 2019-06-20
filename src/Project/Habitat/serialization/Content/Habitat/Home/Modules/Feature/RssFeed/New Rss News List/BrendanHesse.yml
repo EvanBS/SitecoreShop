@@ -1,0 +1,33 @@
+﻿---
+ID: "e646771c-7943-4ff5-93ac-9922718342c9"
+Parent: "e715382a-e49c-4cfa-aa02-67dea757513f"
+Template: "a0d05971-89ec-4dc2-acff-ba0aa3465c84"
+Path: /sitecore/content/Habitat/Home/Modules/Feature/RssFeed/New Rss News List/BrendanHesse
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190604T105904Z
+    - ID: "3f59a8a5-9be3-4043-ab2b-95bda686ed52"
+      Hint: description
+      Value: AppleвЂ™s WWDC press conference was packed with new features for all its numerous operating systems, and the Apple WatchвЂ™s watchOS 6 had some of the most interestingвЂ”including a new app store, various improvements, additions to its health tracking features, andвЂ¦
+    - ID: "59fb72ae-9478-4c1f-8051-a7812e31d679"
+      Hint: Author
+      Value: BrendanHesse
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "ad95b4f3-3ca1-4654-ab25-d7652dd66f85"
+      Hint: NewsDate
+      Value: 20190603T185200Z
+    - ID: "d542b430-8a9e-4d13-a070-ff8f904924be"
+      Hint: urlToImage
+      Value: "https://i.kinja-img.com/gawker-media/image/upload/s--OetKMPjO--/c_fill,fl_progressive,g_center,h_900,q_80,w_1600/wm1ivrtox8rg5tagqayn.png"
+    - ID: "de547539-ea91-43e3-a592-72459ca1cc1b"
+      Hint: NewsSummary
+      Value: All the New Apple Watch Features Apple Announced at WWDC 2019

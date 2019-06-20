@@ -1,0 +1,29 @@
+﻿---
+ID: "d33e1b2e-7e26-4a4a-a6ba-f1a664d6ecf5"
+Parent: "4ba1802a-fb9b-400b-8dd0-77992ed9f580"
+Template: "4a6a7e36-2481-438f-a9ba-0453ecc638fa"
+Path: /sitecore/system/Marketing Control Panel/Profiles/Habitat/Layers/Pattern Cards/Kekich
+DB: master
+SharedFields:
+- ID: "6da71ad3-5849-4482-9317-d21390e5a348"
+  Hint: Pattern
+  Value: |
+    <tracking>
+      <profile id="c4cc3ef6-a779-44ad-9021-01f1dae26270" name="Layers">
+        <key name="Feature" value="1" />
+        <key name="Foundation" value="1" />
+        <key name="Project" value="1" />
+      </profile>
+    </tracking>
+Languages:
+- Language: en
+  Fields:
+  - ID: "fe732790-2ddb-4657-a882-c2fce1fbf0c9"
+    Hint: Name
+    Value: Kekich
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190607T123800Z

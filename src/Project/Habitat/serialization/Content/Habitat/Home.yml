@@ -18,10 +18,25 @@ SharedFields:
   Type: Tracking
   Value: |
     <tracking>
+      <event
+        id="{D8EFAB3E-B417-4260-9E3C-21A60013B126}"
+        name="User Searches Job" />
       <profile
-        id="{24DFF2CF-B30A-4B75-8967-2FE3DED82271}"
-        name="Focus"
-        presets="konstantin|100||">
+        id="c4cc3ef6-a779-44ad-9021-01f1dae26270"
+        name="Layers">
+        <key
+          name="Feature"
+          value="0" />
+        <key
+          name="Foundation"
+          value="0" />
+        <key
+          name="Project"
+          value="0" />
+      </profile>
+      <profile
+        id="24dff2cf-b30a-4b75-8967-2fe3ded82271"
+        name="Focus">
         <key
           name="Background"
           value="9" />
@@ -35,7 +50,43 @@ SharedFields:
           name="Scope"
           value="3" />
       </profile>
+      <profile
+        id="0faf1df6-c36e-434b-bffc-13584e07b8e3"
+        name="Articles">
+        <key
+          name="Cars"
+          value="0" />
+        <key
+          name="Gadgets"
+          value="0" />
+        <key
+          name="Gardening"
+          value="0" />
+      </profile>
     </tracking>
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{CA76A6D1-7DC4-45A6-A904-5D87D6299CE3}"
+          p:after="r[@uid='{20AB9BAA-C112-4567-A701-564423E650D2}']"
+          s:id="{10021A20-1BBD-49B9-A51A-36948DA392F9}"
+          s:ph="all-rss-news-list" />
+        <r
+          uid="{C1D6A8DC-5771-42BF-A44B-D31B04FC326A}"
+          p:after="r[@uid='{CA76A6D1-7DC4-45A6-A904-5D87D6299CE3}']" />
+        <r
+          uid="{F5B1C751-EF19-43E6-90E6-F55290ABE102}"
+          p:after="*[1=2]"
+          s:id="{5CCE10B2-3E61-4FE5-AD1C-36C17B042163}"
+          s:ph="news-article" />
+      </d>
+    </r>
 Languages:
 - Language: da
   Versions:
@@ -221,6 +272,176 @@ Languages:
                 </ruleset>
               </rls>
             </r>
+            <r
+              uid="{2DF0D87A-C993-429C-B824-FB174D239582}"
+              p:after="r[@uid='{1DF746C3-2D29-43E6-9DE2-05622DED6F97}']"
+              s:cac="1"
+              s:ds="{0FB43399-5CE7-43A3-9591-0C85672C802C}"
+              s:id="{6C4ACBF2-A603-4F5B-BA6A-272217EBE8F4}"
+              s:par="inputParam=150000"
+              s:ph="page-layout"
+              s:vbd="1"
+              s:vbl="0"
+              s:vbp="0"
+              s:ciu="1" />
+            <r
+              uid="{D8B47CD5-C316-4084-BE5F-4F542E410A6C}"
+              p:after="r[@uid='{2DF0D87A-C993-429C-B824-FB174D239582}']"
+              s:ds="{F6181CAE-D888-4576-BFD3-8A68077811C7}"
+              s:id="{10021A20-1BBD-49B9-A51A-36948DA392F9}"
+              s:ph="page-layout">
+              <rls>
+                <ruleset>
+                  <rule
+                    uid="{89453DAD-5589-4807-8BEE-8E68E5EFC3E1}"
+                    s:name="CarsCareerFan">
+                    <actions>
+                      <action
+                        uid="B6F28C6806FD48219DC576DC845E666F"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="{27AB39F2-042A-4071-8EA8-574E0A3510D6}" />
+                    </actions>
+                    <conditions>
+                      <condition
+                        uid="878FEA7AB2B34CC3A6408D5F146F5437"
+                        s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
+                        s:ProfileName="Articles"
+                        s:PatternName="PatternCardCars" />
+                    </conditions>
+                  </rule>
+                  <rule
+                    uid="{4BF17653-B288-4EFF-9BD8-56A1694C30FC}"
+                    s:name="GadgetDemoFan">
+                    <actions>
+                      <action
+                        uid="3AEE16C977384F6DB692927D9211FBE3"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="{F6181CAE-D888-4576-BFD3-8A68077811C7}" />
+                    </actions>
+                    <conditions>
+                      <condition
+                        uid="D334A0E13686403B967CDE7D6E0D42C1"
+                        s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
+                        s:ProfileName="Articles"
+                        s:PatternName="PatternCardGadget" />
+                    </conditions>
+                  </rule>
+                  <rule
+                    uid="{00000000-0000-0000-0000-000000000000}"
+                    s:name="Default">
+                    <conditions>
+                      <condition
+                        uid="8F9E58E604914B7781838FB8D28AD662"
+                        s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="E9762A8665D041E09E2ABE852478AB5C"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="{437E8460-808A-4CA6-A0D3-254CA1C2A6A6}" />
+                    </actions>
+                  </rule>
+                </ruleset>
+              </rls>
+            </r>
+            <r
+              uid="{896CE287-FDEC-4A83-9463-310EB4A50B03}"
+              p:after="r[@uid='{D8B47CD5-C316-4084-BE5F-4F542E410A6C}']"
+              s:ds="{00708E15-CFDA-44C4-ABC5-3938EAEA30D2}"
+              s:id="{10021A20-1BBD-49B9-A51A-36948DA392F9}"
+              s:ph="page-layout">
+              <rls>
+                <ruleset>
+                  <rule
+                    uid="{00000000-0000-0000-0000-000000000000}"
+                    s:name="Default">
+                    <conditions>
+                      <condition
+                        uid="63384BEDF8F44A1184A4DDFDFB9A91BC"
+                        s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="CC397E26165840A4AAC80AB912137A78"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="{00708E15-CFDA-44C4-ABC5-3938EAEA30D2}" />
+                    </actions>
+                  </rule>
+                </ruleset>
+              </rls>
+            </r>
+            <r
+              uid="{3C639300-54CF-4EBA-8C8D-12E5F5912025}"
+              p:after="r[@uid='{896CE287-FDEC-4A83-9463-310EB4A50B03}']"
+              s:id="{35DF33B6-070D-4FC5-885D-5AAC81074FFC}"
+              s:ph="page-layout">
+              <rls>
+                <ruleset>
+                  <rule
+                    uid="{239B1DCA-CEB0-43E8-811B-B79A5377F926}"
+                    s:name="cold">
+                    <conditions>
+                      <condition
+                        uid="224E0B8FE3664701941BCF6C9C382BFF"
+                        s:id="{2DCD2933-B417-47DD-9D54-76A14295ADA9}"
+                        s:operatorid="{E362A3A4-E230-4A40-A7C4-FC42767E908F}"
+                        s:degree="28" />
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="ED699A2AFC094C3D9C7697B29DBEFDC8"
+                        s:id="{7B578B65-BD2F-4C7C-9A24-DAE3E98B4F23}"
+                        s:RenderingItem="{539D132B-1EF8-4F6D-990B-141D35D28D08}" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{EC85E2F1-2C94-4F2A-B7FE-CDBB99FD1653}"
+                    s:name="warm">
+                    <conditions>
+                      <condition
+                        uid="F09EAB01363440B58EA4C30B0B7F1284"
+                        s:id="{2DCD2933-B417-47DD-9D54-76A14295ADA9}"
+                        s:operatorid="{B88CD556-082E-4385-BB76-E4D1B565F290}"
+                        s:degree="28" />
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="E7B3545AC3BA472B8C02B9914C95F92D"
+                        s:id="{7B578B65-BD2F-4C7C-9A24-DAE3E98B4F23}"
+                        s:RenderingItem="{6721E42D-7CEF-4630-96D1-2775A01E9E07}" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{00000000-0000-0000-0000-000000000000}"
+                    s:name="Default">
+                    <conditions>
+                      <condition
+                        uid="5EB09F63EAC14B8C9DEEC32803FE7FD5"
+                        s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="AD55377990534ACDB8A5CAB9DD564D8E"
+                        s:id="{7B578B65-BD2F-4C7C-9A24-DAE3E98B4F23}"
+                        s:RenderingItem="{35DF33B6-070D-4FC5-885D-5AAC81074FFC}" />
+                      <action
+                        uid="B0BD57DE65C04E598E5779F977EE431F"
+                        s:id="{25F351A1-712D-45F8-857D-8AD95BB2ACE9}" />
+                    </actions>
+                  </rule>
+                </ruleset>
+              </rls>
+            </r>
+            <r
+              uid="{31285A6C-155D-44BC-B0A8-0873072E1153}"
+              p:after="r[@uid='{3C639300-54CF-4EBA-8C8D-12E5F5912025}']"
+              s:id="{A958B595-44C9-41B2-B8CE-8833874F3EC3}"
+              s:ph="page-layout" />
+            <r
+              uid="{AF640014-EAE9-4601-AEF6-8A5F39972C8F}"
+              p:after="r[@uid='{31285A6C-155D-44BC-B0A8-0873072E1153}']"
+              s:id="{A0E339D1-7B25-4787-AB28-6A47FE0545A0}"
+              s:ph="page-layout" />
             <r
               uid="{F4FE27AF-B867-4E72-8808-843D5781A355}"
               p:after="r[@uid='{A3CA17FF-693C-46F1-87AA-B8C1833F1890}']"

@@ -1,0 +1,12 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@using Sitecore.Feature.RssLoader.Repositories;
+@model IWeatherRepo
+
+<h1>ByDataCustom</h1>
+
+
+<p>
+    From repos
+    @Model.GetWeather().ToString()
+</p>

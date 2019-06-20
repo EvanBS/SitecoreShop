@@ -25,10 +25,10 @@
             {
                 throw new ArgumentNullException(nameof(contextItem));
             }
-            if (!contextItem.DescendsFrom(Templates.NewsFolder.ID))
-            {
-                throw new ArgumentException("Item must derive from NewsFolder", nameof(contextItem));
-            }
+            //if (!contextItem.DescendsFrom(Templates.NewsFolder.ID))
+            //{
+            //    throw new ArgumentException("Item must derive from NewsFolder", nameof(contextItem));
+            //}
 
             var searchService = this.searchServiceRepository.Get(new SearchSettingsBase { Templates = new[] { Templates.NewsArticle.ID } });
             searchService.Settings.Root = contextItem;

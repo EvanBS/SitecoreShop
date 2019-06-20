@@ -1,0 +1,40 @@
+﻿@using Sitecore.Mvc;
+@using Sitecore.Data;
+@using Sitecore.Data.Items;
+@using Sitecore.ContentSearch;
+@using Sitecore.Mvc.Presentation;
+@model Sitecore.Mvc.Presentation.RenderingModel
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Home</title>
+</head>
+<body>
+    <h1>Site</h1>
+
+    
+    @Html.Sitecore().Placeholder("page-layout-ph")
+
+
+    @Html.Sitecore().Placeholder("about-ph")
+    @Html.Sitecore().Placeholder("what-we-do-ph")
+
+
+
+    <script>
+@{
+
+
+            foreach (Item item in Model.Item.Parent.Axes.GetDescendants().Where(i => i.TemplateID.ToString() == "{E05DDC84-1833-4236-8389-B16F42557EE9}"))
+            {
+
+               @Html.Raw("\n" + @item.Fields["body"])
+            }
+}
+
+    </script>
+
+
+
+</body>
+</html>

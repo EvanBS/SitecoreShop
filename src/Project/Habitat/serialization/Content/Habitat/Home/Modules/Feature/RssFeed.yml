@@ -1,8 +1,8 @@
 ﻿---
-ID: "cd466852-dd62-4f22-a2ed-3c4ba570e82a"
+ID: "00708e15-cfda-44c4-abc5-3938eaea30d2"
 Parent: "f7434df7-e32e-4f8c-a50e-27c476f4dc32"
-Template: "7a104e5a-f260-49da-b950-ea855159669d"
-Path: /sitecore/content/Habitat/Home/Modules/Feature/Newss
+Template: "9744d4de-be8c-4381-8860-7e6cdc95452c"
+Path: /sitecore/content/Habitat/Home/Modules/Feature/RssFeed
 DB: master
 Languages:
 - Language: en
@@ -11,13 +11,13 @@ Languages:
     Fields:
     - ID: "1b483e91-d8c4-4d19-ba03-462074b55936"
       Hint: NavigationTitle
-      Value: Newss
+      Value: RssFeed
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190530T155017Z
+      Value: 20190531T130604Z
     - ID: "c30a013f-3cc8-4961-9837-1c483277084a"
       Hint: Title
-      Value: Newss
+      Value: RssFeed
     - ID: "ca0479ce-0bfe-4522-83de-ba688b380a78"
       Hint: BrowserTitle
-      Value: Newss
+      Value: RssFeed

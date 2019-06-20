@@ -1,0 +1,22 @@
+﻿---
+ID: "aee8e2be-83a8-4e2b-a198-89aca7b6919e"
+Parent: "f6181cae-d888-4576-bfd3-8a68077811c7"
+Template: "fff5f245-ffc0-4022-a998-9b07aa5e761f"
+Path: /sitecore/content/Habitat/Home/Modules/Feature/RssFeed/New Rss News List/AJDellinger/_Local
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: "{F5F30CDC-9003-4015-84EC-C3A7E3E50D5E}"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: "-1000"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190604T111634Z

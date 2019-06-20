@@ -1,0 +1,19 @@
+﻿---
+ID: "7649ae16-b01d-4039-a871-ba3a207946d3"
+Parent: "b0b45b62-89a2-4bc2-b382-977ce6639151"
+Template: "7ee0975b-0698-493e-b3a2-0b2ef33d0522"
+Path: /sitecore/layout/Renderings/Feature/RssLoader/CachingFold
+DB: master
+SharedFields:
+- ID: "dec8d2d5-e3cf-48b6-a653-8e69e2716641"
+  Hint: __Security
+  Value: |
+    au|sitecore\admin|p*|+item:read|+item:write|
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190618T084421Z

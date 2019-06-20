@@ -1,0 +1,24 @@
+﻿---
+ID: "6942d685-e901-422d-9663-28092a43ae7e"
+Parent: "e827d97d-380d-4eae-bd52-2721f364d774"
+Template: "fff5f245-ffc0-4022-a998-9b07aa5e761f"
+Path: /sitecore/content/Habitat/Home/Modules/Feature/Career/_Local
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: |
+    {A0D05971-89EC-4DC2-ACFF-BA0AA3465C84}
+    {C18D3794-D126-4548-BFC8-89358DE6E9C1}
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: "-1000"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190605T113210Z

@@ -1,0 +1,8 @@
+﻿@using Sitecore.Feature.Demo.Models;
+@model StatisticInfo
+<h4>@Model.PatternCardName</h4>
+
+@foreach (var item in Model.MyProf)
+{
+    <p>@item.Key @item.Value.ToString()</p>
+}
